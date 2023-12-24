@@ -14,11 +14,13 @@
 
     <properties>
         <java-version>21</java-version>
+        <xerces-version>2.4.0</xerces-version>
         <junit-5-version>5.5.2</junit-5-version>
         <guava-version>32.1.3-jre</guava-version>
         <disruptor-verion>3.3.6</disruptor-verion>
         <spring-doc-version>1.6.15</spring-doc-version>
         <spring-boot-version>3.2.0</spring-boot-version>
+        <xerces-impl-version>2.11.0</xerces-impl-version>
         <mock-server-version>3.10.8</mock-server-version>
         <bouncy-castle-version>1.61</bouncy-castle-version>
         <spring-cloud-version>2023.0.0</spring-cloud-version>
@@ -196,6 +198,17 @@
             <version>${guava-version}</version>
         </dependency>
 
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xerces</artifactId>
+            <version>${xerces-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>${xerces-impl-version}</version>
+        </dependency>
+
         <!-- Spring Boot Data Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -213,12 +226,15 @@
             </exclusions>
         </dependency>
 
+        <!-- Junit 5 Test Dependency -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>${junit-5-version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- Mockito Junit Test Dependency -->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-junit-jupiter</artifactId>
