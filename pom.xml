@@ -29,7 +29,9 @@
         <apache.commons-lang3.version>3.9</apache.commons-lang3.version>
         <maven-compiler-source-version>21</maven-compiler-source-version>
         <maven-compiler-target-version>21</maven-compiler-target-version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring-security-jwt-version>1.0.9.RELEASE</spring-security-jwt-version>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
     <dependencyManagement>
