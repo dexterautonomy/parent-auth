@@ -126,14 +126,6 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- DevTools -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-
         <!-- Config Processor -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -145,6 +137,12 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
+        </dependency>
+
+        <!-- Starter Bootstrap -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 
         <!-- Spring Cloud Starter -->
@@ -198,6 +196,7 @@
             <version>${guava-version}</version>
         </dependency>
 
+        <!-- Xerxes Dependency -->
         <dependency>
             <groupId>xerces</groupId>
             <artifactId>xerces</artifactId>
